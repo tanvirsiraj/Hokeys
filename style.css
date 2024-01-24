@@ -7,7 +7,7 @@
   font-family: "Manrope", sans-serif;
 }
 section {
-  margin-block: 80px;
+  margin-bottom: 80px;
 }
 .section-title {
   color: #131318;
@@ -16,7 +16,7 @@ section {
   font-weight: 800;
 }
 .section-description {
-  max-width: 550px;
+  max-width: 600px;
   color: rgba(19, 19, 24, 0.6);
   text-align: center;
   font-size: 16px;
