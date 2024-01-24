@@ -20,13 +20,17 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="mx-2">
     <header class="container mx-auto">
       <nav class="my-5">
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 mx-0 px-0">
           <div class="navbar-start">
             <div class="dropdown lg:hidden">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden p-0"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -57,7 +61,7 @@
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
-            <a class="text-[#131318] text-4xl font-extrabold"
+            <a class="text-[#131318] lg:text-4xl font-extrabold ps-2 lg:ps-0"
               >Hokey<span class="text-[#FF4240]">’</span>s</a
             >
           </div>
@@ -78,15 +82,70 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end gap-4">
+          <div class="navbar-end gap-2 lg:gap-4">
             <i class="fa-solid fa-magnifying-glass text-[#89898B] text-lg"></i>
             <a
-              class="bg-[#FF4240] text-white px-6 py-4 text-xl rounded-lg cursor-pointer font-bold"
+              class="bg-[#FF4240] text-white px-2 py-1 lg:px-6 lg:py-4 lg:text-xl rounded-lg cursor-pointer lg:font-bold"
               >Get Ticket</a
             >
           </div>
         </div>
       </nav>
     </header>
+
+    <main class="container mx-auto">
+      <!-- hero section  -->
+      <section class="relative">
+        <div class="carousel relative lg:static w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full h-[200px] lg:h-[550px]" />
+            <div
+              class="absolute transform left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:-translate-y-1/2 lg:left-5 lg:right-5 bottom-8"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#131318] border-none text-white mr-2 hover:bg-[#FF4240]"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#131318] border-none text-white hover:bg-[#FF4240]"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/4.png" class="w-full" />
+            <div
+              class="absolute transform left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:-translate-y-1/2 lg:left-5 lg:right-5 bottom-8"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#131318] border-none text-white mr-2 hover:bg-[#FF4240]"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#131318] border-none text-white hover:bg-[#FF4240]"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-[#131318] rounded-lg mt-4 lg:mt-0 p-3 lg:p-6 inline-block static lg:absolute lg:right-8 lg:bottom-16"
+        >
+          <h3 class="lg:text-xl text-white lg:font-extrabold">
+            Meet all the heroes from the field
+          </h3>
+          <p
+            class="text-xs lg:text-base text-white text-opacity-60 max-w-[500px] mt-2 lg:mt-4"
+          >
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
