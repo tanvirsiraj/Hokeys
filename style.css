@@ -6,3 +6,22 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
 }
+section {
+  margin-block: 80px;
+}
+.section-title {
+  color: #131318;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+}
+.section-description {
+  max-width: 550px;
+  color: rgba(19, 19, 24, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  margin-inline: auto;
+  margin-top: 10px;
+}
